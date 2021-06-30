@@ -1,10 +1,9 @@
 POST http://localhost:3003/api/blogs 
 Content-Type: application/json
 
-    {
-        "title": "How to start Adire Business",
-        "author": "Waheed Aishat",
-        "url": "www.textylekulture.com",
-        "likes": 50,
-        "userId": "60dc478db314a92ae8b4a375"
-    }
+{
+    "title": "How to Choose a Career",
+    "author": "Waheed Aishat",
+    "url": "www.careeraffairs.com",
+    "likes": 0
+}
