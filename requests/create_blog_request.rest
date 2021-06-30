@@ -2,9 +2,9 @@ POST http://localhost:3003/api/blogs
 Content-Type: application/json
 
     {
-        "title": "dfsdf",
-        "author": "ghfgyf",
-        "url": "tryrty.com",
-        "likes": 20,
-        "userId": "60dbdf2bbc44092dcc21df1b"
+        "title": "How to start Adire Business",
+        "author": "Waheed Aishat",
+        "url": "www.textylekulture.com",
+        "likes": 50,
+        "userId": "60dc478db314a92ae8b4a375"
     }
