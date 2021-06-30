@@ -1,15 +1,18 @@
 const mongoose = require('mongoose')
 
 const mongoUrl = process.env.MONGODB_URI
+mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })
 
 const blogSchema = new mongoose.Schema({
   title: String,
   author: String,
   url: String,
-  likes: Number
+  likes: Number,
+  // user: {
+  //   type: mongoose.Schema.Types.ObjectId,
+  //   ref: 'User'
+  // }
 })
-
-const Blog = mongoose.model('Blog', blogSchema)
 
 blogSchema.set('toJSON', {
     transform: (document, returnedObject) => {
